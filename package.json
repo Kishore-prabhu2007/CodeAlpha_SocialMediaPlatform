@@ -1,0 +1,19 @@
+{
+  "name": "codealpha-social-media-platform",
+  "version": "1.0.0",
+  "description": "CodeAlpha Full Stack Development Task 2: Social Media Platform with User Profiles, Posts, Comments, and Like/Follow System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Kishore Prabhu (https://github.com/Kishore-prabhu2007)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kishore-prabhu2007/CodeAlpha_SocialMediaPlatform.git"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Kishore Prabhu" />
+  <meta name="description" content="PulseNet — Social Media Platform built by Kishore Prabhu for CodeAlpha Internship" />
+  <title>PulseNet — Kishore Prabhu | CodeAlpha Social Media Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Header -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <span class="logo-dot">🌐</span>
+        <span>Pulse<strong>Net</strong></span>
+        <span class="tag-badge">CodeAlpha Task 2</span>
+      </div>
+
+      <div class="feed-tabs">
+        <button class="feed-tab active" data-feed="all" id="tabAllFeed">For You</button>
+        <button class="feed-tab" data-feed="following" id="tabFollowingFeed">Following</button>
+      </div>
+
+      <div class="user-switcher">
+        <label for="activeUserSelect" class="muted">Active Profile:</label>
+        <select id="activeUserSelect"></select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main 3-Column Social Layout -->
+  <main class="container layout-grid">
+    <!-- Left Column: Current User Profile Card -->
+    <aside class="sidebar">
+      <div class="card profile-card" id="currentUserCard"></div>
+    </aside>
+
+    <!-- Center Column: Post Composer + Feed -->
+    <section class="feed-column">
+      <div class="card composer-card">
+        <form id="postForm">
+          <textarea
+            id="postContent"
+            rows="3"
+            placeholder="What's happening in your tech world today?"
+            required
+          ></textarea>
+          <div class="composer-footer">
+            <input
+              type="url"
+              id="postImage"
+              placeholder="Optional image URL (https://...)"
+            />
+            <button type="submit" class="btn btn-primary">Publish Post</button>
+          </div>
+        </form>
+      </div>
+
+      <div id="postsFeed" class="posts-feed"></div>
+    </section>
+
+    <!-- Right Column: Who to Follow / Community Directory -->
+    <aside class="sidebar">
+      <div class="card">
+        <h3 class="card-title">👥 Creators to Follow</h3>
+        <p class="muted" style="margin-bottom: 1rem;">Follow developers to see their updates in your Following feed.</p>
+        <div id="suggestedUsersList" class="suggested-list"></div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Edit Profile Modal -->
+  <div class="modal-backdrop hidden" id="editProfileModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>✏️ Edit Your Profile</h3>
+        <button class="modal-close" id="closeProfileModal">&times;</button>
+      </div>
+      <form id="editProfileForm" class="profile-form">
+        <label>Display Name</label>
+        <input type="text" id="editName" required />
+        <label>Username Handle</label>
+        <input type="text" id="editHandle" required />
+        <label>Bio</label>
+        <textarea id="editBio" rows="3"></textarea>
+        <label>Avatar URL</label>
+        <input type="url" id="editAvatar" />
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:0.5rem;">Save Changes</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

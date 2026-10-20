@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Kishore Prabhu",
+      "handle": "@kishore_dev",
+      "bio": "Full-Stack Developer | Passionate about building modern web apps & scalable backend systems 🚀",
+      "avatar": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80",
+      "followers": [
+        "u2",
+        "u3"
+      ],
+      "following": [
+        "u2"
+      ]
+    },
+    {
+      "id": "u2",
+      "name": "Sophia Chen",
+      "handle": "@sophia_codes",
+      "bio": "UI/UX Engineer & Open Source Contributor ✨ | Coffee + CSS Grid enthusiast.",
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "followers": [
+        "u1"
+      ],
+      "following": [
+        "u1",
+        "u3"
+      ]
+    },
+    {
+      "id": "u3",
+      "name": "Liam Patel",
+      "handle": "@liam_cloud",
+      "bio": "Backend Architect | APIs, Distributed Systems & Express.js.",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80",
+      "followers": [
+        "u2"
+      ],
+      "following": [
+        "u1"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "id": "post1",
+      "userId": "u2",
+      "content": "Just shipped a fresh dark-mode dashboard design! Clean typography and subtle glassmorphism always make interfaces pop. What do you think? 🎨✨",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=900&q=80",
+      "likes": [
+        "u1",
+        "u3"
+      ],
+      "createdAt": "2026-10-01T10:30:00.000Z",
+      "comments": [
+        {
+          "id": "c1",
+          "userId": "u1",
+          "text": "Looks super crisp Sophia! Love the contrast ratios.",
+          "createdAt": "2026-10-01T11:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "post2",
+      "userId": "u1",
+      "content": "Excited to complete my Full Stack Development Internship tasks with @CodeAlpha! Built this Social Media Platform from scratch using HTML, CSS, JavaScript, and Node.js/Express 💻🔥",
+      "image": "",
+      "likes": [
+        "u2"
+      ],
+      "createdAt": "2026-10-01T12:15:00.000Z",
+      "comments": [
+        {
+          "id": "c2",
+          "userId": "u3",
+          "text": "Congrats Kishore! The REST API structure and clean UI are rock solid.",
+          "createdAt": "2026-10-01T12:40:00.000Z"
+        }
+      ]
+    }
+  ]
+}
